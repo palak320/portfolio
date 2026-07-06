@@ -1,32 +1,34 @@
 import "./Skills.css";
 
 function Skills() {
-
-  const skills=[
+  const skills = [
     "HTML",
     "CSS",
     "JavaScript",
     "React",
-    "Java",
-    "Python",
-    "Git"
+    "Node.js",
+    "MongoDB"
   ];
 
   return (
     <section id="skills" className="skills">
+      <div className="skills-container">
+        <h1 className="section-title">My Skills</h1>
+        <p className="section-subtitle">
+          Technologies and tools I work with
+        </p>
 
-      <h1>Skills</h1>
-
-      <div className="skill-box">
-
-        {skills.map((skill)=>(
-          <div className="card">
-            {skill}
-          </div>
-        ))}
-
+        <div className="skill-grid">
+          {skills.map((skill, index) => (
+            <div className="skill-card" key={index}>
+              <div className="skill-icon">
+                <span>✨</span>
+              </div>
+              <h3>{skill}</h3>
+            </div>
+          ))}
+        </div>
       </div>
-
     </section>
   );
 }

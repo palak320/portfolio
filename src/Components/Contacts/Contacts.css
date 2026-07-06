@@ -1,12 +1,186 @@
-.contact{
-  padding:100px 10%;
-  display:flex;
-  flex-direction:column;
-  gap:20px;
+.contact {
+  padding: 100px 5%;
+  background: 
+    linear-gradient(0deg, transparent 24%, rgba(99, 102, 241, 0.05) 25%, rgba(99, 102, 241, 0.05) 26%, transparent 27%, transparent 74%, rgba(99, 102, 241, 0.05) 75%, rgba(99, 102, 241, 0.05) 76%, transparent 77%, transparent),
+    linear-gradient(90deg, transparent 24%, rgba(99, 102, 241, 0.05) 25%, rgba(99, 102, 241, 0.05) 26%, transparent 27%, transparent 74%, rgba(99, 102, 241, 0.05) 75%, rgba(99, 102, 241, 0.05) 76%, transparent 77%, transparent),
+    linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  background-size: 60px 60px, 60px 60px, 100% 100%;
+  color: #f1f5f9;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
 }
 
-input,textarea{
-  padding:15px;
-  border:none;
-  border-radius:10px;
+.contact-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, #6366f1 0%, #ec4899 50%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: #94a3b8;
+  margin-bottom: 50px;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin-top: 50px;
+  align-items: start;
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.contact-info h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #f1f5f9;
+}
+
+.contact-info p {
+  font-size: 16px;
+  color: #cbd5e1;
+  margin-bottom: 40px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+  border-color: #6366f1;
+  transform: translateX(5px);
+}
+
+.contact-icon {
+  font-size: 32px;
+  min-width: 50px;
+}
+
+.contact-item h3 {
+  margin: 0 0 8px 0;
+  color: #6366f1;
+  font-size: 16px;
+}
+
+.contact-item a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #6366f1;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);
+  padding: 40px;
+  border-radius: 15px;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  border-radius: 10px;
+  background: rgba(30, 41, 59, 0.5);
+  color: #f1f5f9;
+  font-size: 16px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #94a3b8;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #6366f1;
+  background: rgba(30, 41, 59, 0.8);
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.3);
+}
+
+.submit-btn {
+  padding: 14px 30px;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
+}
+
+.submit-btn:active {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 60px 5%;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-form {
+    padding: 25px;
+  }
+
+  .contact-info h2 {
+    font-size: 24px;
+  }
 }
