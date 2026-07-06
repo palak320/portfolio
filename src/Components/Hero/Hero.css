@@ -1,0 +1,28 @@
+.hero{
+  height: 100pxvh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:60px;
+}
+
+.hero span{
+  color:#1215ce;
+}
+
+.hero h2{
+  margin:20px 0;
+}
+
+button{
+  margin-top:20px;
+  padding:15px 30px;
+  border:none;
+  border-radius:30px;
+  background:#ad87ea;
+  cursor:pointer;
+}

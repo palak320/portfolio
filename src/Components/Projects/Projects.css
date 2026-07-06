@@ -1,0 +1,15 @@
+.projects{
+  padding:100px 10%;
+}
+
+.project{
+  background:#2066c7;
+  padding:30px;
+  border-radius:20px;
+  margin-top:20px;
+  transition:.3s;
+}
+
+.project:hover{
+  transform:scale(1.03);
+}

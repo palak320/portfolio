@@ -1,0 +1,19 @@
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 10%;
+  position:sticky;
+  top:0;
+  background:#3186f5;
+}
+
+.navbar ul{
+  display:flex;
+  gap:25px;
+  list-style:none;
+}
+
+.navbar a{
+  color:rgb(247, 249, 250);
+  text-decoration:none;
+}
